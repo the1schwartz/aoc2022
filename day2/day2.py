@@ -31,5 +31,7 @@ for line in f:
     totalScore += shapeScores[trimmedLine]
     newTotalScore += newShapeScores[trimmedLine]
 
+f.close()
+
 print(f"Part 1 answer: {totalScore}")
 print(f"Part 2 answer: {newTotalScore}")

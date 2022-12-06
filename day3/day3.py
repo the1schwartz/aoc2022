@@ -29,5 +29,7 @@ for line in f:
     commonChars = list(set(compartments[0]) & set(compartments[1]))
     prioritySum += charPriorities[commonChars[0]]
 
+f.close()
+
 print(f"Part 1 answer: {prioritySum}")
 print(f"Part 2 answer: {badgePrioritySum}")

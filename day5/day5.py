@@ -52,6 +52,8 @@ def moveCrates(moveMultipleInOneGo=False):
                     c = stacks[command[1]].pop()
                     stacks[command[2]].append(c)
 
+    f.close()
+
     topOfStacks = ""
     for s in stacks:
         topOfStacks += s[len(s) - 1]

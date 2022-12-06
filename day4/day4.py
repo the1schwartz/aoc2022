@@ -23,5 +23,7 @@ for line in f:
                 firstLow >= secondLow and firstHigh <= secondHigh:
             fullyContainedCount += 1
 
+f.close()
+
 print(f"Part 1 answer: {fullyContainedCount}")
 print(f"Part 2 answer: {overlapCount}")

@@ -12,6 +12,8 @@ for line in f:
 
     currentCalories += int(trimmedLine)
 
+f.close()
+
 if currentCalories > 0:
     elvesCalories.append(currentCalories)
 

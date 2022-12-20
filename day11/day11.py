@@ -17,7 +17,6 @@ class Monkey:
 
     def operationNext(self):
         item = self.items.pop()
-        itemCopy = item
         ldic = locals()
         exec(f"item = {self.op}", {}, ldic)
         item = ldic["item"]
